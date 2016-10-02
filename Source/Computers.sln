@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Niki", "Niki\Niki.csproj", "{920382DC-166F-4C55-8AF7-70D668191107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{A4417847-9BC9-4281-8C58-4B64D2D6B296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computers.Models", "Models\Computers.Models\Computers.Models.csproj", "{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{920382DC-166F-4C55-8AF7-70D668191107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{920382DC-166F-4C55-8AF7-70D668191107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{920382DC-166F-4C55-8AF7-70D668191107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8} = {A4417847-9BC9-4281-8C58-4B64D2D6B296}
 	EndGlobalSection
 EndGlobal
