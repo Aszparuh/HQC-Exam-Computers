@@ -1,10 +1,10 @@
 ﻿using System;
-using Computers1;
-using Computers11;
-using Computers8;
-using static Computers8.Program;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Computers4
+namespace Computers.Models
 {
     internal class Laptop
     {

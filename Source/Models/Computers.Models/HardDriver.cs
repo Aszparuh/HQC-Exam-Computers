@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Computers11
+namespace Computers.Models
 {
     internal class HardDriver
     {

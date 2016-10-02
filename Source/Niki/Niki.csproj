@@ -44,12 +44,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cpu.cs" />
-    <Compile Include="HardDriver.cs" />
-    <Compile Include="Laptop.cs" />
-    <Compile Include="LaptopBattery.cs" />
-    <Compile Include="Rammstein.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
