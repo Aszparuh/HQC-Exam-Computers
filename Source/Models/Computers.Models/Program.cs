@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Computers1;
-using Computers11;
-using Computers4;
 
-namespace Computers8
+namespace Computers.Models
 {
     internal class Program
     {
