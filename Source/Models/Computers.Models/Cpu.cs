@@ -6,10 +6,10 @@ namespace Computers.Models
     {
         private static readonly Random Random = new Random();
         private readonly byte numberOfBits;
-        private readonly Rammstein ram;
+        private readonly Ram ram;
         private readonly HardDriver videoCard;
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDriver videoCard)
+        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, HardDriver videoCard)
         {
             this.numberOfBits = numberOfBits;
             this.ram = ram;

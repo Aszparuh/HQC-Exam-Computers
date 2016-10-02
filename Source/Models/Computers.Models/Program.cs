@@ -25,11 +25,11 @@ namespace Computers.Models
             var manufacturer = Console.ReadLine();
             if (manufacturer == "HP")
             {
-                var ram = new Rammstein(Eight / 4);
+                var ram = new Ram(Eight / 4);
                 var videoCard = new HardDriver() { IsMonochrome = false };
                 pc = new Computer(ComputerType.Pc, new Cpu(Eight / 4, 32, ram, videoCard), ram, new[] { new HardDriver(500, false, 0) }, videoCard, null);
 
-                var serverRam = new Rammstein(Eight * 4);
+                var serverRam = new Ram(Eight * 4);
                 var serverVideo = new HardDriver();
                 server = new Computer(
                     ComputerType.Server,
@@ -43,7 +43,7 @@ namespace Computers.Models
                     {
                         IsMonochrome = false
                     };
-                    var ram1 = new Rammstein(Eight / 2);
+                    var ram1 = new Ram(Eight / 2);
                     laptop = new Computer(
                         ComputerType.Laptop,
                         new Cpu(Eight / 4, 64, ram1, card),
@@ -55,14 +55,14 @@ namespace Computers.Models
             }
             else if (manufacturer == "Dell")
             {
-                var ram = new Rammstein(Eight);
+                var ram = new Ram(Eight);
                 var videoCard = new HardDriver()
                 {
                     IsMonochrome = false
                 };
 
                 pc = new Computer(ComputerType.Pc, new Cpu(Eight / 2, 64, ram, videoCard), ram, new[] { new HardDriver(1000, false, 0) }, videoCard, null);
-                var ram1 = new Rammstein(Eight * Eight);
+                var ram1 = new Ram(Eight * Eight);
                 var card = new HardDriver();
                 server = new Computer(
                     ComputerType.Server,
@@ -71,7 +71,7 @@ namespace Computers.Models
                     new List<HardDriver> { new HardDriver(0, true, 2, new List<HardDriver> { new HardDriver(2000, false, 0), new HardDriver(2000, false, 0) }) },
                     card,
                     null);
-                var ram2 = new Rammstein(Eight);
+                var ram2 = new Ram(Eight);
                 var videoCard1 = new HardDriver() { IsMonochrome = false };
                 laptop = new Computer(
                     ComputerType.Laptop,

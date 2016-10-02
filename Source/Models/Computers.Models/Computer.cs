@@ -10,7 +10,7 @@ namespace Computers.Models
         internal Computer(
             ComputerType type,
             Cpu cpu,
-            Rammstein ram,
+            Ram ram,
             IEnumerable<HardDriver> hardDrives,
             HardDriver videoCard,
             LaptopBattery battery)
@@ -33,7 +33,7 @@ namespace Computers.Models
 
         private Cpu Cpu { get; set; }
 
-        private Rammstein Ram { get; set; }
+        private Ram Ram { get; set; }
 
         public void Play(int guessNumber)
         {
