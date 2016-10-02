@@ -1,4 +1,4 @@
-﻿namespace Computers.Models
+﻿namespace Computers3
 {
     internal class LaptopBattery
     {

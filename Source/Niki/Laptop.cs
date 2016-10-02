@@ -1,4 +1,10 @@
-﻿namespace Computers.Models
+﻿using System;
+using Computers1;
+using Computers11;
+using Computers8;
+using static Computers8.Program;
+
+namespace Computers4
 {
     internal class Laptop
     {

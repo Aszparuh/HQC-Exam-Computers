@@ -1,6 +1,9 @@
 ﻿using System;
+using Computers1;
+using Computers11;
+using Computers8;
 
-namespace Computers.Models
+namespace Computers4
 {
     internal class Cpu
     {

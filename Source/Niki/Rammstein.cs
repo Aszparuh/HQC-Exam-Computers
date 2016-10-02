@@ -1,4 +1,4 @@
-﻿namespace Computers.Models
+﻿namespace Computers1
 {
     internal class Rammstein
     {
