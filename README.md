@@ -119,7 +119,7 @@ on the console. The commands are described below:
     "**Exit**" stops the commands processing without any output. It is
     always the last command in the input sequence.
 
-    1.  ### Input
+    1.Input
 
 The input data comes from the console. It consists of manufacturer name
 and a sequence of commands, each staying at a separate single line. The
@@ -140,7 +140,7 @@ from each of the commands from the input sequence.
 
 -   Numbers will be valid 32-bit signed integer numbers.
 
-    1.  ### Examples
+    1.Examples
 
 | **Input example**         | **Output example**           |
 | ------------------------- | ---------------------------- |
