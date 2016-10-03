@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Cpus\BaseCpu.cs" />
+    <Compile Include="Components\Cpus\Cpu32bit.cs" />
+    <Compile Include="Components\Cpus\Cpu64bit.cs" />
+    <Compile Include="Components\Cpus\CpuConstants.cs" />
     <Compile Include="Computer.cs" />
     <Compile Include="Cpu.cs" />
     <Compile Include="HardDriver.cs" />

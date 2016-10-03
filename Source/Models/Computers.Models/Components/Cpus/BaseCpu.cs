@@ -1,6 +1,8 @@
-﻿namespace Computers.Models.Components
+﻿using System;
+
+namespace Computers.Models.Components.Cpus
 {
-    internal abstract class BaseCpu
+    public abstract class BaseCpu
     {
         private readonly byte numberOfCores;
 
@@ -9,6 +11,6 @@
             this.numberOfCores = numberOfCores;
         }
 
-        internal abstract int SquareNumber();
+        public abstract int SquareNumber(int number);
     }
 }
