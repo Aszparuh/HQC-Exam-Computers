@@ -4,7 +4,7 @@ namespace Computers.Models.Components.Cpus
 {
     public class Cpu32bit : BaseCpu
     {
-        public Cpu32bit(byte numberOfCores) 
+        public Cpu32bit(byte numberOfCores)
             : base(numberOfCores)
         {
         }
@@ -15,7 +15,7 @@ namespace Computers.Models.Components.Cpus
             {
                 throw new ArgumentException("The number must be larger than 0");
             }
-            else if(number > CpuConstants.MaximalNumberToBeCalculatedByCpu32)
+            else if (number > CpuConstants.MaximalNumberToBeCalculatedByCpu32)
             {
                 throw new ArgumentException("The number must not be greater than 500");
             }

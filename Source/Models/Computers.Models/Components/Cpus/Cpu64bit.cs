@@ -4,7 +4,7 @@ namespace Computers.Models.Components.Cpus
 {
     public class Cpu64bit : BaseCpu
     {
-        public Cpu64bit(byte numberOfCores) 
+        public Cpu64bit(byte numberOfCores)
             : base(numberOfCores)
         {
         }

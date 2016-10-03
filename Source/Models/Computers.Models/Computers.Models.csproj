@@ -45,6 +45,9 @@
     <Compile Include="Components\Cpus\Cpu32bit.cs" />
     <Compile Include="Components\Cpus\Cpu64bit.cs" />
     <Compile Include="Components\Cpus\CpuConstants.cs" />
+    <Compile Include="Components\HardDrives\HardDrive.cs" />
+    <Compile Include="Components\HardDrives\RaidArray.cs" />
+    <Compile Include="Components\HardDrives\SingleHardDrive.cs" />
     <Compile Include="Computer.cs" />
     <Compile Include="Cpu.cs" />
     <Compile Include="HardDriver.cs" />
