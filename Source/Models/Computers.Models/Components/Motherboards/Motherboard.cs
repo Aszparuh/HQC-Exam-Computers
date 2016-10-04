@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Computers.Models.Components.Cpus;
 using Computers.Models.Components.Rams;
 using Computers.Models.Components.VideoCards;
 
@@ -6,9 +6,11 @@ namespace Computers.Models.Components.Motherboards
 {
     public class Motherboard : IMotherboard
     {
-        public Motherboard(Cpu cpu, IRam ram, BaseVideoCard videoCard)
+        public Motherboard(BaseCpu cpu, IRam ram, BaseVideoCard videoCard)
         {
-
+            cpu.AttachTo(this);
+            this.Ram = ram;
+            this.VideoCard = videoCard;
         }
 
         private IRam Ram { get; set; }
@@ -17,17 +19,17 @@ namespace Computers.Models.Components.Motherboards
 
         public void DrawOnVideoCard(string data)
         {
-            throw new NotImplementedException();
+            this.VideoCard.Draw(data);
         }
 
         public int LoadRamValue()
         {
-            throw new NotImplementedException();
+            return this.Ram.LoadValue();
         }
 
         public void SaveRamValue(int value)
         {
-            throw new NotImplementedException();
+            this.Ram.SaveValue(value);
         }
     }
 }

@@ -9,21 +9,9 @@ namespace Computers.Models.Components.Cpus
         {
         }
 
-        public override int SquareNumber(int number)
+        protected override int GetMaxValue()
         {
-            if (number < CpuConstants.MinimalNumberToBeCalculated)
-            {
-                throw new ArgumentException("The number must be larger than 0");
-            }
-            else if (number > CpuConstants.MaximalNumberToBeCalculatedByCpu32)
-            {
-                throw new ArgumentException("The number must not be greater than 500");
-            }
-            else
-            {
-                var result = Math.Pow(number, 2);
-                return (int)result;
-            }
+            return CpuConstants.MaximalNumberToBeCalculatedByCpu32;
         }
     }
 }
