@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{E90F6E61-9EBA-49AC-9F31-C599B2322A1A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Computers.Models</RootNamespace>
-    <AssemblyName>Computers.Models</AssemblyName>
+    <RootNamespace>Computers.ConsoleApplication</RootNamespace>
+    <AssemblyName>Computers.ConsoleApplication</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -20,9 +22,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,38 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\Batteries\IBatttery.cs" />
-    <Compile Include="Components\Batteries\LaptopBattery.cs" />
-    <Compile Include="Components\Contracts\IMotherboardComponent.cs" />
-    <Compile Include="Components\Cpus\BaseCpu.cs" />
-    <Compile Include="Components\Cpus\Cpu32bit.cs" />
-    <Compile Include="Components\Cpus\Cpu64bit.cs" />
-    <Compile Include="Components\Cpus\CpuConstants.cs" />
-    <Compile Include="Components\HardDrives\HardDrive.cs" />
-    <Compile Include="Components\HardDrives\RaidArray.cs" />
-    <Compile Include="Components\HardDrives\SingleHardDrive.cs" />
-    <Compile Include="Components\Motherboards\IMotherboard.cs" />
-    <Compile Include="Components\Motherboards\Motherboard.cs" />
-    <Compile Include="Components\Rams\IRam.cs" />
-    <Compile Include="Components\Rams\Ram.cs" />
-    <Compile Include="Components\VideoCards\BaseVideoCard.cs" />
-    <Compile Include="Components\VideoCards\ColourVideoCard.cs" />
-    <Compile Include="Components\VideoCards\MonochromeVideoCard.cs" />
-    <Compile Include="ComputerTypes\BaseComputer.cs" />
-    <Compile Include="ComputerTypes\Laptop.cs" />
-    <Compile Include="ComputerTypes\PersonalComputer.cs" />
-    <Compile Include="ComputerTypes\Server.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
-    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
-    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
