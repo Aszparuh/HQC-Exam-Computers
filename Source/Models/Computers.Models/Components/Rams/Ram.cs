@@ -1,6 +1,6 @@
-﻿namespace Computers.Models
+﻿namespace Computers.Models.Components.Rams
 {
-    internal class Ram
+    public class Ram : IRam
     {
         private int value;
 
@@ -9,7 +9,7 @@
             this.Amount = a;
         }
 
-        private int Amount { get; set; }
+        public int Amount { get; set; }
 
         public void SaveValue(int newValue)
         {

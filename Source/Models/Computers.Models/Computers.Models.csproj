@@ -48,6 +48,10 @@
     <Compile Include="Components\HardDrives\HardDrive.cs" />
     <Compile Include="Components\HardDrives\RaidArray.cs" />
     <Compile Include="Components\HardDrives\SingleHardDrive.cs" />
+    <Compile Include="Components\Motherboards\IMotherboard.cs" />
+    <Compile Include="Components\Motherboards\Motherboard.cs" />
+    <Compile Include="Components\Rams\IRam.cs" />
+    <Compile Include="Components\Rams\Ram.cs" />
     <Compile Include="Components\VideoCards\BaseVideoCard.cs" />
     <Compile Include="Components\VideoCards\ColourVideoCard.cs" />
     <Compile Include="Components\VideoCards\MonochromeVideoCard.cs" />
@@ -58,7 +62,6 @@
     <Compile Include="LaptopBattery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ram.cs" />
     <Compile Include="Types\ComputerType.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +71,9 @@
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\Contracts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
