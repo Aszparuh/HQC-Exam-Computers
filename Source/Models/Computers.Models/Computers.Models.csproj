@@ -48,6 +48,9 @@
     <Compile Include="Components\HardDrives\HardDrive.cs" />
     <Compile Include="Components\HardDrives\RaidArray.cs" />
     <Compile Include="Components\HardDrives\SingleHardDrive.cs" />
+    <Compile Include="Components\VideoCards\BaseVideoCard.cs" />
+    <Compile Include="Components\VideoCards\ColourVideoCard.cs" />
+    <Compile Include="Components\VideoCards\MonochromeVideoCard.cs" />
     <Compile Include="Computer.cs" />
     <Compile Include="Cpu.cs" />
     <Compile Include="HardDriver.cs" />
