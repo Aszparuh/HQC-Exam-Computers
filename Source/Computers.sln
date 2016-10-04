@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computers.ConsoleApplication", "Application\Computers.ConsoleApplication\Computers.ConsoleApplication.csproj", "{2E153906-6598-400B-91AC-C7F9E9E370F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{45303D6A-366C-4D5E-961C-F157CE4B1FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computers.Tests", "Tests\Computers.Tests\Computers.Tests.csproj", "{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{2E153906-6598-400B-91AC-C7F9E9E370F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E153906-6598-400B-91AC-C7F9E9E370F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E153906-6598-400B-91AC-C7F9E9E370F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +40,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AA99B43D-79AD-4C8E-94A3-B49A8880ACC8} = {A4417847-9BC9-4281-8C58-4B64D2D6B296}
 		{2E153906-6598-400B-91AC-C7F9E9E370F9} = {F5C31109-DA03-4F33-AE21-FE5FEA8E574B}
+		{753E9DAC-FADC-4EDF-9DCB-947730DEA8BB} = {45303D6A-366C-4D5E-961C-F157CE4B1FE3}
 	EndGlobalSection
 EndGlobal

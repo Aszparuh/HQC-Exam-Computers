@@ -4,7 +4,7 @@ using Computers.Models.Manufacturers;
 
 namespace Computers.ConsoleApplication
 {
-    internal class Startup
+    public class Startup
     {
         private const string InvalidCommandMessage = "Invalid command!";
         private const string ExitCommandName = "Exit";
@@ -16,7 +16,7 @@ namespace Computers.ConsoleApplication
         private static Laptop laptop;
         private static Server server;
 
-        private static void Main()
+        public static void Main()
         {
             CreateComputers();
             ProcessCommands();
