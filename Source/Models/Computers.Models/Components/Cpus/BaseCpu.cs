@@ -1,10 +1,12 @@
-﻿using Computers.Models.Components.Contracts;
+﻿using System;
+using Computers.Models.Components.Contracts;
 using Computers.Models.Components.Motherboards;
 
 namespace Computers.Models.Components.Cpus
 {
     public abstract class BaseCpu : IMotherboardComponent
     {
+        private readonly Random random = new Random();
         private readonly byte numberOfCores;
         private IMotherboard motherboard;
 
@@ -34,6 +36,12 @@ namespace Computers.Models.Components.Cpus
                 var result = value * value;
                 this.motherboard.DrawOnVideoCard(string.Format(CpuConstants.SquareFormatString, value, result));
             }
+        }
+
+        public void RandomNumber(int min, int max)
+        {
+            int randomNumber = this.random.Next(min, max + 1);
+            this.motherboard.SaveRamValue(randomNumber);
         }
 
         protected abstract int GetMaxValue();
