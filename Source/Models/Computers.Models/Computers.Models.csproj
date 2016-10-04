@@ -45,6 +45,7 @@
     <Compile Include="Components\Batteries\LaptopBattery.cs" />
     <Compile Include="Components\Contracts\IMotherboardComponent.cs" />
     <Compile Include="Components\Cpus\BaseCpu.cs" />
+    <Compile Include="Components\Cpus\Cpu128bit.cs" />
     <Compile Include="Components\Cpus\Cpu32bit.cs" />
     <Compile Include="Components\Cpus\Cpu64bit.cs" />
     <Compile Include="Components\Cpus\CpuConstants.cs" />
@@ -62,6 +63,11 @@
     <Compile Include="ComputerTypes\Laptop.cs" />
     <Compile Include="ComputerTypes\PersonalComputer.cs" />
     <Compile Include="ComputerTypes\Server.cs" />
+    <Compile Include="Manufacturers\DellComputerFactory.cs" />
+    <Compile Include="Manufacturers\HpComputerFactory.cs" />
+    <Compile Include="Manufacturers\IComputerFactory.cs" />
+    <Compile Include="Manufacturers\LenovoComputerFactory.cs" />
+    <Compile Include="Manufacturers\ManufacturersFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

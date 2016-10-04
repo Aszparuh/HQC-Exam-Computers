@@ -1,6 +1,6 @@
 ﻿namespace Computers.Models.Components.Batteries
 {
-    public class LaptopBattery
+    public class LaptopBattery : IBatttery
     {
         private const int InitialCharge = 50;
         private const int MinimalCharge = 0;
